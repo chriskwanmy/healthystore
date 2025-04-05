@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "https://chriskwanmy.github.io/healthystore/static/css/main.26d6cb2f.css",
+    "main.js": "https://chriskwanmy.github.io/healthystore/static/js/main.520c6c0d.js",
+    "static/media/logo.jpg": "https://chriskwanmy.github.io/healthystore/static/media/logo.652717a29aca28bddb98.jpg",
+    "index.html": "https://chriskwanmy.github.io/healthystore/index.html",
+    "main.26d6cb2f.css.map": "https://chriskwanmy.github.io/healthystore/static/css/main.26d6cb2f.css.map",
+    "main.520c6c0d.js.map": "https://chriskwanmy.github.io/healthystore/static/js/main.520c6c0d.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.26d6cb2f.css",
+    "static/js/main.520c6c0d.js"
+  ]
+}
