@@ -8,17 +8,27 @@
       var pathSegmentsToKeep = 1;
 
       var l = window.location;
+      var pathname = l.pathname;
+
+      // 移除重复的 /healthystore 前缀
+      if (pathname.startsWith("/healthystore/healthystore")) {
+        pathname = pathname.replace(
+          "/healthystore/healthystore",
+          "/healthystore"
+        );
+      }
+
       l.replace(
         l.protocol +
           "//" +
           l.hostname +
           (l.port ? ":" + l.port : "") +
-          l.pathname
+          pathname
             .split("/")
             .slice(0, 1 + pathSegmentsToKeep)
             .join("/") +
           "/?/" +
-          l.pathname
+          pathname
             .slice(1)
             .split("/")
             .slice(pathSegmentsToKeep)
