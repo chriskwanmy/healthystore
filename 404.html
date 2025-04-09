@@ -21,13 +21,16 @@
         );
       }
 
+      // 保存原始路径
+      sessionStorage.setItem("originalPath", pathname);
+
       // 重定向到 index.html
       window.location.replace(
         l.protocol +
           "//" +
           l.hostname +
           (l.port ? ":" + l.port : "") +
-          pathname.replace(/\/[^\/]*$/, "/index.html")
+          "/healthystore/index.html"
       );
     </script>
   </head>
