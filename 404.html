@@ -21,6 +21,11 @@
         );
       }
 
+      // 处理根路径
+      if (pathname === "/healthystore") {
+        pathname = "/healthystore/";
+      }
+
       // 保存完整的原始路径
       sessionStorage.setItem("originalPath", pathname);
       console.log("404.html - Saved path:", pathname);
