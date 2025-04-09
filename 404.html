@@ -5,10 +5,13 @@
     <title>Health Food Store</title>
     <script type="text/javascript">
       // 单页应用 404 处理
-      var pathSegmentsToKeep = 1;
-
       var l = window.location;
       var pathname = l.pathname;
+
+      // 确保路径以 /healthystore 开头
+      if (!pathname.startsWith("/healthystore")) {
+        pathname = "/healthystore" + pathname;
+      }
 
       // 移除重复的 /healthystore 前缀
       if (pathname.startsWith("/healthystore/healthystore")) {
@@ -18,13 +21,13 @@
         );
       }
 
-      // 直接重定向到 index.html，不添加查询参数
+      // 重定向到 index.html
       window.location.replace(
         l.protocol +
           "//" +
           l.hostname +
           (l.port ? ":" + l.port : "") +
-          "/healthystore/index.html"
+          pathname.replace(/\/[^\/]*$/, "/index.html")
       );
     </script>
   </head>
