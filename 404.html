@@ -21,8 +21,9 @@
         );
       }
 
-      // 保存原始路径
-      sessionStorage.setItem("originalPath", pathname);
+      // 保存原始路径（不包含 /healthystore 前缀）
+      const pathWithoutBase = pathname.replace("/healthystore", "");
+      sessionStorage.setItem("originalPath", pathWithoutBase);
 
       // 重定向到 index.html
       window.location.replace(
