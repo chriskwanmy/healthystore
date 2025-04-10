@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/healthystore/static/css/main.001230fc.css",
-    "main.js": "/healthystore/static/js/main.05132414.js",
+    "main.css": "/healthystore/static/css/main.a3b48e4a.css",
+    "main.js": "/healthystore/static/js/main.0e627c29.js",
     "static/media/logo.jpg": "/healthystore/static/media/logo.652717a29aca28bddb98.jpg",
     "index.html": "/healthystore/index.html",
-    "main.001230fc.css.map": "/healthystore/static/css/main.001230fc.css.map",
-    "main.05132414.js.map": "/healthystore/static/js/main.05132414.js.map"
+    "main.a3b48e4a.css.map": "/healthystore/static/css/main.a3b48e4a.css.map",
+    "main.0e627c29.js.map": "/healthystore/static/js/main.0e627c29.js.map"
   },
   "entrypoints": [
-    "static/css/main.001230fc.css",
-    "static/js/main.05132414.js"
+    "static/css/main.a3b48e4a.css",
+    "static/js/main.0e627c29.js"
   ]
 }
